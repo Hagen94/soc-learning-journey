@@ -90,7 +90,7 @@ SIEM
  ├── IAM
  │
  └── Ticketing System
-
+```
 
 
  Switching between these tools increases investigation time.
@@ -134,12 +134,13 @@ Structured investigation workflows.
 The Three Core Capabilities of SOAR
 
 SOAR is based on three main capabilities:
-
+```text
              SOAR
                │
       ┌────────┼────────┐
       │        │        │
 Orchestration Automation Response
+```
 ---
 1. Orchestration
 
@@ -159,7 +160,7 @@ SOAR connects these tools and defines the workflow through a playbook.
 Automation means that predefined actions can be executed automatically instead of requiring manual interaction from the analyst.
 
 For example:
-
+```text
 SIEM Alert
     │
     ▼
@@ -172,7 +173,7 @@ SOAR
     ├── Disable User if Malicious
     │
     └── Create Ticket
-
+```
 Automation can significantly reduce the amount of repetitive work performed by SOC analysts.
 
 3. Response
@@ -194,7 +195,7 @@ A SOAR playbook is a predefined workflow that determines what actions should be 
 Playbooks contain predefined steps and can include different paths depending on the result of each step.
 
 Example:
-
+```text
 Alert Received
       │
       ▼
@@ -208,7 +209,7 @@ Check Successful Logins
       │
       ▼
 Containment / Escalation
-
+```
 The workflow can change depending on the results.
 
 For example, if the user normally uses the IP and the failed attempts are minimal, the playbook may stop early.
@@ -234,7 +235,7 @@ Phishing Playbook
 The room introduces a phishing investigation as an example of a SOAR playbook.
 
 A simplified workflow can look like:
-
+```text
 Suspicious Email
        │
        ▼
@@ -256,7 +257,7 @@ Investigation
        │
        ▼
 Remediation
-
+```
 The playbook contains conditional decisions based on whether the email contains a URL or attachment.
 
 This allows repetitive investigation steps to be executed consistently.
@@ -282,7 +283,7 @@ Manual vs Automated Tasks
 An important concept from the room is that not every action should necessarily be automated.
 
 A SOAR workflow can contain both:
-
+```text
 MANUAL
    │
    ├── Analyst decision
@@ -295,7 +296,7 @@ AUTOMATED
    ├── Query SIEM
    ├── Check Threat Intelligence
    └── Create Ticket
-
+```
 The appropriate balance depends on the workflow and the importance of human judgment.
 
 This is particularly important for critical decisions where automation alone may not be sufficient.
@@ -314,7 +315,7 @@ The workflow demonstrates how SOAR can combine different security processes into
 SOAR Investigation Workflow
 
 The concepts from the room can be summarized as:
-
+```text
               SECURITY ALERT
                     │
                     ▼
@@ -340,13 +341,13 @@ The concepts from the room can be summarized as:
                     │
                     ▼
             Decision / Escalation
-
+```
 This represents how SOAR integrates security tools and workflows while maintaining the analyst's role in critical decisions.
 ---
 SOAR and Core SOC Solutions
 
 SOAR connects particularly well with the technologies studied in this section:
-
+```text
                  SOAR
                   │
        ┌──────────┼──────────┐
@@ -362,7 +363,7 @@ SOAR connects particularly well with the technologies studied in this section:
                   │
                   ▼
           Automated Response
-
+```
 The SIEM can provide alerts, EDR can provide endpoint information and response actions, threat intelligence can provide indicator information, and other tools can perform containment or remediation actions.
 
 SOAR coordinates these capabilities through predefined workflows.
