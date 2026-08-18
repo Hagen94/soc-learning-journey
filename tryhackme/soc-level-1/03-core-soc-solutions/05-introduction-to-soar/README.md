@@ -91,8 +91,10 @@ SIEM
  │
  └── Ticketing System
 
- Switching between these tools increases investigation time.
 
+
+ Switching between these tools increases investigation time.
+---
 Manual Processes
 
 Some SOC procedures depend heavily on manual actions and undocumented analyst knowledge.
@@ -102,6 +104,7 @@ This can:
 Slow investigations.
 Increase response times.
 Make processes less consistent.
+---
 Talent Shortage
 
 The increasing complexity of security threats combined with large numbers of alerts can place additional pressure on SOC analysts.
@@ -111,11 +114,14 @@ This can contribute to:
 Analyst overload.
 Reduced efficiency.
 Longer incident response times.
+
+---
 What is SOAR?
 
 Security Orchestration, Automation, and Response (SOAR) is a technology that unifies security tools used by a SOC.
 
 Instead of switching between SIEM, EDR, Firewall, Threat Intelligence, IAM, and ticketing systems individually, analysts can coordinate these tools through a centralized SOAR interface.
+
 
 SOAR also provides:
 
@@ -123,6 +129,8 @@ Ticketing.
 Case management.
 Incident tracking.
 Structured investigation workflows.
+
+---
 The Three Core Capabilities of SOAR
 
 SOAR is based on three main capabilities:
@@ -132,6 +140,7 @@ SOAR is based on three main capabilities:
       ┌────────┼────────┐
       │        │        │
 Orchestration Automation Response
+---
 1. Orchestration
 
 Orchestration connects different security tools and coordinates their actions through a unified platform.
@@ -301,7 +310,7 @@ Manual.
 Automated.
 
 The workflow demonstrates how SOAR can combine different security processes into a single structured investigation.
-
+---
 SOAR Investigation Workflow
 
 The concepts from the room can be summarized as:
@@ -333,7 +342,7 @@ The concepts from the room can be summarized as:
             Decision / Escalation
 
 This represents how SOAR integrates security tools and workflows while maintaining the analyst's role in critical decisions.
-
+---
 SOAR and Core SOC Solutions
 
 SOAR connects particularly well with the technologies studied in this section:
@@ -357,7 +366,7 @@ SOAR connects particularly well with the technologies studied in this section:
 The SIEM can provide alerts, EDR can provide endpoint information and response actions, threat intelligence can provide indicator information, and other tools can perform containment or remediation actions.
 
 SOAR coordinates these capabilities through predefined workflows.
-
+---
 Skills Acquired
 
 This room strengthened my understanding of:
@@ -379,6 +388,7 @@ Phishing playbooks
 CVE patching playbooks
 Incident response automation
 SOC analyst decision-making
+--- 
 Analyst Notes
 Key Takeaways
 Traditional SOCs can suffer from alert fatigue, disconnected tools, manual processes, and talent shortages.
@@ -394,6 +404,8 @@ SOAR does not replace SOC analysts.
 Analysts remain responsible for complex investigations and critical decisions.
 Playbooks can support phishing investigations and CVE patching.
 Effective workflows can combine both manual and automated actions.
+
+---
 New Terminology
 SOAR
 Security Orchestration
@@ -408,6 +420,7 @@ Orchestration
 Threat Intelligence Workflow
 Phishing Playbook
 CVE Patching Playbook
+---
 Personal Reflection
 
 This room helped me understand how SOAR can improve the efficiency of a SOC by connecting security tools and automating repetitive tasks.
@@ -418,6 +431,7 @@ I also learned that automation does not eliminate the need for SOC analysts. Hum
 
 SOAR therefore acts as a force multiplier for the SOC, allowing analysts to spend less time on repetitive tasks and more time on investigations that require human expertise.
 
+---
 References
 TryHackMe — SOC Level 1
 Introduction to SOAR room
