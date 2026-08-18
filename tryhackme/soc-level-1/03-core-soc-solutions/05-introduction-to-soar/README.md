@@ -101,9 +101,9 @@ Some SOC procedures depend heavily on manual actions and undocumented analyst kn
 
 This can:
 
-Slow investigations.
-Increase response times.
-Make processes less consistent.
+- Slow investigations.
+- Increase response times.
+- Make processes less consistent.
 ---
 Talent Shortage
 
@@ -111,9 +111,9 @@ The increasing complexity of security threats combined with large numbers of ale
 
 This can contribute to:
 
-Analyst overload.
-Reduced efficiency.
-Longer incident response times.
+- Analyst overload.
+- Reduced efficiency.
+- Longer incident response times.
 
 ---
 What is SOAR?
@@ -125,10 +125,10 @@ Instead of switching between SIEM, EDR, Firewall, Threat Intelligence, IAM, and 
 
 SOAR also provides:
 
-Ticketing.
-Case management.
-Incident tracking.
-Structured investigation workflows.
+- Ticketing.
+- Case management.
+- Incident tracking.
+- Structured investigation workflows.
 
 ---
 The Three Core Capabilities of SOAR
@@ -148,10 +148,10 @@ Orchestration connects different security tools and coordinates their actions th
 
 For example, during a VPN brute-force investigation, an analyst may need to use:
 
-SIEM
-Threat Intelligence
-IAM
-Ticketing system
+- SIEM
+- Threat Intelligence
+- IAM
+- Ticketing system
 
 SOAR connects these tools and defines the workflow through a playbook.
 
@@ -222,15 +222,15 @@ Complex investigations still require human judgment.
 
 SOC analysts are responsible for:
 
-Making critical decisions.
-Understanding the broader business context.
-Creating and maintaining playbooks.
-Performing complex investigations.
-Verifying important actions.
+- Making critical decisions.
+- Understanding the broader business context.
+- Creating and maintaining playbooks.
+- Performing complex investigations.
+- Verifying important actions.
 
 The role of SOAR is therefore to reduce repetitive workload and support analysts, rather than eliminate the analyst role.
 
-Phishing Playbook
+# Phishing Playbook
 
 The room introduces a phishing investigation as an example of a SOAR playbook.
 
@@ -262,7 +262,7 @@ The playbook contains conditional decisions based on whether the email contains 
 
 This allows repetitive investigation steps to be executed consistently.
 
-CVE Patching Playbook
+# CVE Patching Playbook
 
 SOAR can also support vulnerability management.
 
@@ -278,7 +278,7 @@ Prepare the patch for deployment.
 
 This reduces the manual workload associated with handling frequent CVE disclosures.
 
-Manual vs Automated Tasks
+# Manual vs Automated Tasks
 
 An important concept from the room is that not every action should necessarily be automated.
 
@@ -312,7 +312,7 @@ Automated.
 
 The workflow demonstrates how SOAR can combine different security processes into a single structured investigation.
 ---
-SOAR Investigation Workflow
+# SOAR Investigation Workflow
 
 The concepts from the room can be summarized as:
 ```text
@@ -344,7 +344,7 @@ The concepts from the room can be summarized as:
 ```
 This represents how SOAR integrates security tools and workflows while maintaining the analyst's role in critical decisions.
 ---
-SOAR and Core SOC Solutions
+# SOAR and Core SOC Solutions
 
 SOAR connects particularly well with the technologies studied in this section:
 ```text
@@ -367,62 +367,64 @@ SOAR connects particularly well with the technologies studied in this section:
 The SIEM can provide alerts, EDR can provide endpoint information and response actions, threat intelligence can provide indicator information, and other tools can perform containment or remediation actions.
 
 SOAR coordinates these capabilities through predefined workflows.
+
 ---
-Skills Acquired
+
+## Skills Acquired
 
 This room strengthened my understanding of:
 
-SOAR
-Security Orchestration
-Security Automation
-Security Response
-SOC challenges
-Alert fatigue
-Tool integration
-Playbooks
-Case management
-Ticketing
-Automated workflows
-Manual vs automated actions
-Threat Intelligence workflows
-Phishing playbooks
-CVE patching playbooks
-Incident response automation
-SOC analyst decision-making
+* SOAR
+* Security Orchestration
+* Security Automation
+* Security Response
+* SOC challenges
+* Alert fatigue
+* Tool integration
+* Playbooks
+* Case management
+* Ticketing
+* Automated workflows
+* Manual vs automated actions
+* Threat Intelligence workflows
+* Phishing playbooks
+* CVE patching playbooks
+* Incident response automation
+* SOC analyst decision-making
 --- 
-Analyst Notes
-Key Takeaways
-Traditional SOCs can suffer from alert fatigue, disconnected tools, manual processes, and talent shortages.
-SOAR unifies security tools within a centralized interface.
-The three core SOAR capabilities are Orchestration, Automation, and Response.
-Orchestration connects different security tools and coordinates workflows.
-Automation executes predefined actions without requiring manual analyst interaction.
-Response allows SOAR to coordinate actions across security tools.
-Playbooks define predefined workflows for recurring alert types.
-Playbooks can contain different paths depending on investigation results.
-SOAR can automate repetitive investigation and response tasks.
-SOAR does not replace SOC analysts.
-Analysts remain responsible for complex investigations and critical decisions.
-Playbooks can support phishing investigations and CVE patching.
-Effective workflows can combine both manual and automated actions.
+# Analyst Notes
+## Key Takeaways
+* Traditional SOCs can suffer from alert fatigue, disconnected tools, manual processes, and talent shortages.
+* SOAR unifies security tools within a centralized interface.
+* The three core SOAR capabilities are Orchestration, Automation, and Response.
+* Orchestration connects different security tools and coordinates workflows.
+* Automation executes predefined actions without requiring manual analyst interaction.
+* Response allows SOAR to coordinate actions across security tools.
+* Playbooks define predefined workflows for recurring alert types.
+* Playbooks can contain different paths depending on investigation results.
+* SOAR can automate repetitive investigation and response tasks.
+* SOAR does not replace SOC analysts.
+* Analysts remain responsible for complex investigations and critical decisions.
+* Playbooks can support phishing investigations and CVE patching.
+* Effective workflows can combine both manual and automated actions.
 
 ---
-New Terminology
-SOAR
-Security Orchestration
-Security Automation
-Security Response
-Playbook
-Alert Fatigue
-Case Management
-Workflow
-Automation
-Orchestration
-Threat Intelligence Workflow
-Phishing Playbook
-CVE Patching Playbook
+## New Terminology
+* SOAR
+* Security Orchestration
+* Security Automation
+* Security Response
+* Playbook
+* Alert Fatigue
+* Case Management
+* Workflow
+* Automation
+* Orchestration
+* Threat Intelligence Workflow
+* Phishing Playbook
+* CVE Patching Playbook
 ---
-Personal Reflection
+## Personal Reflection
 
 This room helped me understand how SOAR can improve the efficiency of a SOC by connecting security tools and automating repetitive tasks.
 
@@ -433,6 +435,6 @@ I also learned that automation does not eliminate the need for SOC analysts. Hum
 SOAR therefore acts as a force multiplier for the SOC, allowing analysts to spend less time on repetitive tasks and more time on investigations that require human expertise.
 
 ---
-References
-TryHackMe — SOC Level 1
-Introduction to SOAR room
+## References
+* TryHackMe — SOC Level 1
+* Introduction to SOAR room
